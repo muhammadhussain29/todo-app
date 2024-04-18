@@ -1,0 +1,105 @@
+/* CSS RESET */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* CONTAINER OF ALL BODY ELEMENTS */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+}
+/* LEFT CONTAINER OR LIST */
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70vw;
+    padding: 16px 30px;
+    height: inherit;
+    overflow: hidden;
+}
+/* MAIN HEADING OF TO-DO-LIST */
+.heading-1{
+    color: black;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+}
+/* PROGRESS REFERS TO DATE , DUE-DATE , REMARK ON TOP LEFT */
+.progress{
+    padding: 8px;
+    margin: 16px;
+}
+.progress div{
+    font-size: 1.2rem;
+}
+/* UL CONTAINS THE LIST OF TASK TO-DO */
+.list ul{
+    height: 70%;
+    padding: 8px;
+    margin: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+.list ul li{
+    font-size: 1.4rem;
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding: 8px 0px;
+}
+/* RIGHT CONTAINER OR EDITING PANEL  */
+.editing{
+    width: 30vw;
+    border-left: 1px solid grey;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.editing .edit-btn{
+    font-size: 1.4rem;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.edit-container{
+    padding: 8px 12px;
+}
+/* GENERAL CSS FOR ALL EDITING PANEL ELEMENTS OR SUB ELEMENTS */
+/* FROM LINE 73 TO 102 */
+.text{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 4px 6px;
+    margin: 6px 0px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0px;
+}
+.chk{
+    font-size: 1.2rem;
+}
+.chk{
+    padding: 2px;
+}
+.btn{
+    font-size: 1rem;
+    padding: 4px 9px;
+    width: 30%;
+}
+.align-right{
+    margin-left: auto;
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+      <!-- LEFT CONTAINER OR LIST -->
+      <div class="list">
+
+        <!-- TOP HEADING -->
+        <h1 class="heading-1">To-Do-List</h1>
+
+        <!-- FOR REMARKS AND DATES ON TOP LEFT CORNER -->
+        <div class="progress">
+          <div>Date : <span class="status">---</span></div>
+          <div>Due Date : <span class="status">---</span></div>
+          <div>Remark : <span class="status">---</span></div>
+        </div>
+        
+        <!-- BOX OF TASK TO-DO -->
+        <ul id="list-container">
+          <!-- DEFAULT TASK -->
+          <li class="list-item " data-defaultItem="" >Your list of task goes here.</li>
+        </ul>
+
+      </div>
+
+      <!-- RIGHT CONTSINER OR EDITING PANEL -->
+      <div class="editing">
+
+        <!-- ADD ITEM -->
+        <button class="edit-btn">Add Item</button>
+        <div class="edit-container hide" >
+          <input type="text" name="" class="text" id="add-text" placeholder="Enter a Task">
+          <div class="flex">
+            <div class="chk">
+              <input type="checkbox" name="" class="chk" id="add-chk"> Mark as Important
+            </div>
+            <input type="submit" value="Add Task" class="btn" >
+          </div> 
+        </div>
+        
+        <!-- MARK COMPLETE -->
+        <button class="edit-btn" >Mark as Complete</button>
+        <div class="edit-container hide">
+          <input type="number" name="" id="comp-text" class="text" placeholder="Enter task Number">
+          <div class="flex">
+            <input type="submit" value="Mark Complete" class="btn align-right"  >
+          </div>
+        </div>
+
+        <!-- DELETE ITEM -->
+        <button class="edit-btn" >Delete Item</button>
+        <div class="edit-container hide">
+          <input type="number" name="" id="delete-text" class="text" placeholder="Enter task Number">
+          <div class="flex">
+            <input type="submit" value="Delete Task" class="btn align-right" >
+          </div>
+        </div>
+        
+        <!-- EDIT ITEM -->
+        <button class="edit-btn">Edit Item</button>
+        <div class="edit-container hide">
+          <input type="number" name="" id="edit-text-no" class="text" placeholder="Enter task Number">
+          <input type="text" name="" class="text" id="edit-text-txt" placeholder="Update with">
+          <div class="flex">
+            <div class="chk">
+              <input type="checkbox" name="" class="chk" id="edit-chk"> Mark as Important
+            </div>
+            <input type="submit" value="Update Task" class="btn"  >
+          </div> 
+          
+        </div>
+        
+        <!-- RESET -->
+        <button class="edit-btn">Reset</button>
+        <div class="edit-container hide">
+          <div class="text">Are you sure you want to Reset? You can not reverse this process.</div>
+          <div class="flex">
+            <input type="submit" value="Reset" class="btn align-right" >
+          </div>
+        </div>
+        
+        <!-- SET DUE DATE -->
+        <button class="edit-btn">Set Due Date</button>
+        <div class="edit-container hide">
+          <input type="date" name="" id="set-date" class="text">
+          <div class="flex">
+            <input type="submit" value="Set Due-Date" class="btn align-right"  >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
